@@ -1,4 +1,4 @@
-# Prompt Engineering Fundamentals
+# Prompt Engineering Basics
 
 ## Introduction
 
