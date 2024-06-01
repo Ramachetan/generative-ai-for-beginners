@@ -38,11 +38,6 @@ The term Foundation Model was [coined by Stanford researchers](https://arxiv.org
 - **They are very large models**, based on very deep neural networks trained on billions of parameters.
 - **They are normally intended to serve as a ‘foundation’ for other models**, meaning they can be used as a starting point for other models to be built on top of, which can be done by fine-tuning.
 
-![Foundation Models versus LLMs](https://miro.medium.com/v2/resize:fit:828/format:webp/0*wl3muT6VxQe5txkC.png)
-
-Image source: [Essential Guide to Foundation Models and Large Language Models | by Babar M Bhatti | Medium
-](https://thebabar.medium.com/essential-guide-to-foundation-models-and-large-language-models-27dab58f7404)
-
 To further clarify this distinction, let’s take ChatGPT as an example. To build the first version of ChatGPT, a model called GPT-3.5 served as the foundation model. This means that OpenAI used some chat-specific data to create a tuned version of GPT-3.5 that was specialized in performing well in conversational scenarios, such as chatbots.
 
 ![Foundation Model](./images/Multimodal.png)
@@ -168,6 +163,3 @@ A:1, Open-source models are models that are made available to the public, while 
 ## 🚀 Challenge
 
 Read up more on my blog  [Understanding RAG](https://blog.miraclesoft.com/the-power-of-retrieval-augmented-generation-in-enhancing-generative-ai-capabilities/) for your use case.
-
-
-rewrite this README file making it easy to read, Keep all the links and Images as I did, as they provide more context to the user and give me markdown code 
