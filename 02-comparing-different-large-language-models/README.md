@@ -8,8 +8,11 @@ The next step in our journey is exploring the current landscape of LLMs and unde
 
 This lesson will cover:
 
-
-
+- Understanding different types of LLMs.
+- Foundation Models versus LLMs.
+- Open Source versus Proprietary Models.
+- Embedding versus Image generation versus Text and Code generation.
+- Encoder-Decoder versus Decoder-only.
 
 ## Learning Goals
 
@@ -89,19 +92,10 @@ The reviewer is like an Encoder only model, they look at the course written and 
 
 Imagine that we can have someone as well who could create and review the quiz, this is an Encoder-Decoder model. Some examples would be BART and T5.
 
-### Service versus Model
-
-Now, let's talk about the difference between a service and a model. A service is a product that is offered by a Cloud Service Provider, and is often a combination of models, data, and other components. A model is the core component of a service, and is often a foundation model, such as an LLM.
-
-Services are often optimized for production use and are often easier to use than models, via a graphical user interface. However, services are not always available for free, and may require a subscription or payment to use, in exchange for leveraging the service owner’s equipment and resources, optimizing expenses and scaling easily. An example of service is [Azure OpenAI service](https://learn.microsoft.com/azure/ai-services/openai/overview), which offers a pay-as-you-go rate plan,  meaning users are charged proportionally to how much they use the service Also, Azure OpenAI service offers enterprise-grade security and responsible AI framework on top of the models' capabilities.
-
-Models are just the Neural Network, with the parameters, weights, and others. Allowing companies to run locally, however, would need to buy equipment, build structure to scale and buy a license or use an open-source model. A model like LLaMA is available to be used, requiring computational power to run the model.
 
 ## Improving LLM results
 
-We’ve explored with our startup team different kinds of LLMs and a Cloud Platform (Azure Machine Learning) enabling us to compare different models, evaluate them on test data, improve performance and deploy them on inference endpoints.
-
-But when shall they consider fine-tuning a model rather than using a pre-trained one? Are there other approaches to improve model performance on specific workloads?
+We’ve explored what different kinds of LLMs are available and how they can be used. But when shall they consider fine-tuning a model rather than using a pre-trained one? Are there other approaches to improve model performance on specific workloads?
 
 There are several approaches a business can use to get the results they need from an LLM, you can select different types of models with different degrees of training
 
@@ -113,10 +107,6 @@ deploy an LLM in production, with different levels of complexity, cost, and qual
 
 - **Fine-tuned model**. Here, you trained the model further on your own data which leads to the model being more exact and responsive to your needs but might be costly.
 
-![LLMs deployment](./images/Deploy.png)
-
-Img source: [Four Ways that Enterprises Deploy LLMs | Fiddler AI Blog](https://www.fiddler.ai/blog/four-ways-that-enterprises-deploy-llms)
-
 ### Prompt Engineering with Context
 
 Pre-trained LLMs work very well on generalized natural language tasks, even by calling them with a short prompt, like a sentence to complete or a question – the so-called “zero-shot” learning.
@@ -127,9 +117,7 @@ Prompt engineering with context is the most cost-effective approach to kick-off 
 ### Retrieval Augmented Generation (RAG)
 
 LLMs have the limitation that they can use only the data that has been used during their training to generate an answer. This means that they don’t know anything about the facts that happened after their training process, and they cannot access non-public information (like company data).
-This can be overcome through RAG, a technique that augments prompt with external data in the form of chunks of documents, considering prompt length limits. This is supported by Vector database tools (like [Azure Vector Search](https://learn.microsoft.com/azure/search/vector-search-overview)) that retrieve the useful chunks from varied pre-defined data sources and add them to the prompt Context.
-
-This technique is very helpful when a business doesn’t have enough data, enough time, or resources to fine-tune an LLM, but still wishes to improve performance on a specific workload and reduce risks of fabrications, i.e., mystification of reality or harmful content.  
+This can be overcome through RAG, a technique that augments prompt with external data in the form of chunks of documents, considering prompt length limits. This method involves a two-step process: first, the model retrieves relevant documents from a database or web endpoint, and then it generates the completion based on the retrieved documents. Here we use Embedding models to retrieve the relevant documents and LLMs to generate the completion. 
 
 ### Fine-tuned model
 
@@ -156,6 +144,34 @@ What could be a good approach to improve LLM completion results?
 
 A:3, if you have the time and resources and high quality data, fine-tuning is the better option to stay up to date. However, if you're looking at improving things and you're lacking time it's worth considering RAG first.
 
+What are the different types of LLMs?
+
+1. Embedding
+1. Image generation
+1. Text and code generation
+1. All of the above
+
+A:4, all of the above.
+
+What is the difference between a foundation model and an LLM?
+
+1. Foundation models are trained using unsupervised learning or self-supervised learning, while LLMs are trained using supervised learning.
+1. Foundation models are very large models, while LLMs are smaller models.
+1. Foundation models are intended to serve as a ‘foundation’ for other models, while LLMs are not.
+
+A:3, Foundation models are intended to serve as a ‘foundation’ for other models, while LLMs are not.
+
+What is the difference between open-source and proprietary models?
+
+1. Open-source models are models that are made available to the public, while proprietary models are not.
+1. Open-source models are often optimized for production use, while proprietary models are not.
+1. Open-source models are not always available for free, while proprietary models are.
+
+A:1, Open-source models are models that are made available to the public, while proprietary models are not.
+
 ## 🚀 Challenge
 
-Read up more on how you can [use RAG](https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview) for your business.
+Read up more on my blog  [Understanding RAG](https://blog.miraclesoft.com/the-power-of-retrieval-augmented-generation-in-enhancing-generative-ai-capabilities/) for your use case.
+
+
+rewrite this README file making it easy to read, Keep all the links and Images as I did, as they provide more context to the user and give me markdown code 
