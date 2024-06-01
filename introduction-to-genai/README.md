@@ -22,7 +22,8 @@ We're now at a point with AI having human cognitive capabilities, like conversat
 
 Recently, a new type of AI model called the Transformer has made significant improvements in how machines understand and generate language. These models, known as Large Language Models (LLMs), are trained on vast amounts of text and can perform various language tasks.
 
-![AI, ML, DL and Generative AI](./images/AI-diagram.png)
+![AI, ML, DL and Generative AI](![image](https://github.com/Ramachetan/generative-ai-for-beginners/assets/24260211/779c4e06-8f3f-47ad-aab8-f35b9a491c11)
+)
 
 ## How Do Large Language Models Work?
 
