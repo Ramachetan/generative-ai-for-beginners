@@ -14,13 +14,6 @@ This lesson will cover:
 - Embedding versus Image generation versus Text and Code generation.
 - Encoder-Decoder versus Decoder-only.
 
-## Learning Goals
-
-After completing this lesson, you will be able to:
-
-- Select the right model for your use case.
-
-
 ## Understand different types of LLMs
 
 LLMs can have multiple categorizations based on their architecture, training data, and use case. Understanding these differences will help you select the right model for the scenario, and understand how to test, iterate, and improve performance.
@@ -80,24 +73,26 @@ Text and code generation models are models that generate text or code. These mod
 
  ![Text and code generation](./images/Text.png)
 
-### Encoder-Decoder versus Decoder-only
+### Encoder-Decoder versus Decoder-only versus Encoder-only
 
-To talk about the different types of architectures of LLMs, let's use an analogy.
+Let's use a cooking analogy to explain the different types of architectures of Language Learning Models (LLMs).
 
-Imagine your manager gave you a task for writing a quiz for the students.  You have two colleagues; one oversees creating the content and the other oversees reviewing them.
+Think of a Decoder-only model like a chef who specializes in creating new dishes. They have a pantry full of ingredients (the input data) and they can create a new dish (the output) based on what they have. However, they don't have a clear understanding of the individual ingredients or their relationships. They just know how to combine them to make something tasty. An example of a Decoder-only model is the GPT family of models, such as GPT-3.
 
-The content creator is like a Decoder only model, they can look at the topic and see what you already wrote and then he can write a course based on that. They are very good at writing engaging and informative content, but they are not very good at understanding the topic and the learning objectives. Some examples of Decoder models are GPT family models, such as GPT-3.
+An Encoder-only model, on the other hand, is like a food critic. They can taste a dish (the input) and understand its components and how they relate to each other, but they can't create a new dish themselves. They're good at understanding context and relationships, but not at generating content. An example of an Encoder-only model is BERT.
 
-The reviewer is like an Encoder only model, they look at the course written and the answers, noticing the relationship between them and understanding context, but they are not good at generating content. An example of Encoder only model would be BERT.
+Finally, an Encoder-Decoder model is like a chef who is also a food critic. They can both create new dishes and understand the components of existing ones. They're good at both generating content and understanding context. Examples of Encoder-Decoder models include BART and T5.
 
-Imagine that we can have someone as well who could create and review the quiz, this is an Encoder-Decoder model. Some examples would be BART and T5.
+## Fine-tuned model
+
+Fine-tuning is a process that leverages transfer learning to ‘adapt’ the model to a downstream task or to solve a specific problem. It requires a set of training examples consisting of a single input (the prompt) and its associated output (the completion). Basically, fine-tuning is a way to make the model more exact and responsive to your needs. It’s like teaching the model to understand your specific use case and generate the completion you need. For example you are working on a chatbot for a financial institution, you can fine-tune a model on a dataset of financial conversations to make it more accurate and responsive to your needs.
 
 
 ## Improving LLM results
 
 We’ve explored what different kinds of LLMs are available and how they can be used. But when shall they consider fine-tuning a model rather than using a pre-trained one? Are there other approaches to improve model performance on specific workloads?
 
-There are several approaches a business can use to get the results they need from an LLM, you can select different types of models with different degrees of training
+There are several approaches one can use to get the results they need from an LLM, you can select different types of models with different degrees of training
 
 deploy an LLM in production, with different levels of complexity, cost, and quality. Here are some different approaches:
 
@@ -117,6 +112,7 @@ Prompt engineering with context is the most cost-effective approach to kick-off 
 ### Retrieval Augmented Generation (RAG)
 
 LLMs have the limitation that they can use only the data that has been used during their training to generate an answer. This means that they don’t know anything about the facts that happened after their training process, and they cannot access non-public information (like company data).
+
 This can be overcome through RAG, a technique that augments prompt with external data in the form of chunks of documents, considering prompt length limits. This method involves a two-step process: first, the model retrieves relevant documents from a database or web endpoint, and then it generates the completion based on the retrieved documents. Here we use Embedding models to retrieve the relevant documents and LLMs to generate the completion. 
 
 ### Fine-tuned model
