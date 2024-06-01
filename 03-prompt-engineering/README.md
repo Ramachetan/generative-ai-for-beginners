@@ -21,18 +21,6 @@ By the end of this lesson we will be able to:
 3. Learn best practices and techniques for prompt engineering.
 4. Apply learned techniques to real examples, using an OpenAI endpoint.
 
-## Learning Sandbox
-
-Prompt engineering is currently more art than science. The best way to improve our intuition for it is to _practice more_ and adopt a trial-and-error approach that combines application domain expertise with recommended techniques and model-specific optimizations.
-
-The Jupyter Notebook accompanying this lesson provides a _sandbox_ environment where you can try out what you learn—as you go, or as part of the code challenge at the end. To execute the exercises you will need:
-
-1. **An Azure OpenAI API key** - the service endpoint for a deployed LLM.
-2. **A Python Runtime** - in which the Notebook can be executed.
-3. **Local Env Variables** - _complete the [SETUP](./../00-course-setup/SETUP.md) steps now to get ready_.
-
-The notebook comes with _starter_ exercises—but you are encouraged to add your own _Markdown_ (description) and _Code_ (prompt requests) sections to try out more examples or ideas—and build your intuition for prompt design.
-
 ## What is Prompt Engineering?
 
 We started this lesson by defining **Prompt Engineering** as the process of _designing and optimizing_ text inputs (prompts) to deliver consistent and quality responses (completions) for a given application objective and model. We can think of this as a 2-step process:
@@ -152,6 +140,7 @@ response = openai.chat.completions.create(
         {"role": "user", "content": "Where was it played?"}
     ]
 )
+```
 
 ### Instruction Prompt
 
