@@ -65,4 +65,12 @@ Source: [Arize](https://arize.com/)
 4. **Anomaly Detection**:
     - Detect outliers in high-dimensional data by measuring the distance between embeddings of normal and anomalous data points.
 
+### Here are a few other examples of how embeddings might be used in the real world.
 
+**Self-Driving Cars**
+
+Another important and challenging problem where embeddings are used is self-driving cars. Say your team is training the model that feeds into the car’s braking system. One important model feature you want to have is “stop sign.” With this in mind, you train on a bunch of stop signs in your area, but unfortunately in the real world you may encounter a stop sign in a different language or even a different shape. It would be nice not to worry about that. Luckily, another team at your company has a stop sign embedding for you to use.
+
+Now you can focus on one part of the problem and the other team can be responsible for traffic sign embedding and serve it to you as an input. Embeddings become the interface between models, just like a REST interface between different microservices. You may need to agree on dimensionality, but beyond that the downstream model can be a black box.
+
+[Image Embeddings](https://arize.com/wp-content/uploads/2022/06/blog-stop-sign-embeddings.png)
