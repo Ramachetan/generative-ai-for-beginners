@@ -37,4 +37,4 @@ Imagine you ask a RAG-powered system, "What are the main health benefits of gree
 
 This example demonstrates how RAG utilizes both retrieval and generative capabilities to provide an informed and comprehensive answer.
 
-![RAG](https://blog.miraclesoft.com/wp-content/uploads/2024/02/RetrievalAugmentedGeneration_BlogImage-1024x520.png)
+![image](https://github.com/Ramachetan/generative-ai-for-beginners/assets/24260211/e62a97a3-d567-47b5-9d95-67baa8cd937c)
