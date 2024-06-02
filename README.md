@@ -1,4 +1,4 @@
-![Generative AI For Beginners](./images/repo-thubmnail2.png)
+![Generative Ai](https://github.com/Ramachetan/generative-ai-for-beginners/assets/24260211/4e972031-1d02-4d1e-b2e8-a3a2577e2a26)
 
 ### 8 Lessons teaching basics you need to know to start building Generative AI applications
 
@@ -12,7 +12,7 @@ This course has 8 lessons. Each lesson covers its own topic so start wherever yo
 
 **What You Need**
 
-- Access to the [Azure OpenAI Service](https://ai.google.dev/gemini-api/docs/api-key) - _Only required to complete coding lessons_
+- Access to the [Google AI Studio](https://ai.google.dev/gemini-api/docs/api-key) - _Only required to complete coding lessons_
 
 - Basic knowledge of Python
 - A Github account to [fork this entire repo](https://github.com/Ramachetan/generative-ai-for-beginners) to your own GitHub account
