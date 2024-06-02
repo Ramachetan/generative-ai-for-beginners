@@ -1,4 +1,4 @@
-# :star: :bookmark: awesome-generative-ai-guide
+# :books: Generative AI Resources
 
 Generative AI is experiencing rapid growth, and this repository serves as a comprehensive hub for updates on generative AI research, interview materials, notebooks, and more!
 
@@ -127,19 +127,6 @@ Generative AI is experiencing rapid growth, and this repository serves as a comp
 2. [How to Use Midjourney, AI Art and ChatGPT to Create an Amazing Website](https://www.youtube.com/watch?v=5wdCev86RYE) by Brad Hussey
 3. [Build AI Apps with ChatGPT, DALL-E and GPT-4](https://scrimba.com/learn/buildaiapps) by Scrimba
 4. [11-777: Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisNM7pbbevXKAbT_Xmub37fA) by Carnegie Mellon University
-
-#### Miscellaneous
-
-1. [Avoiding AI Harm](https://www.coursera.org/learn/avoiding-ai-harm) by Coursera
-2. [Developing AI Policy](https://www.coursera.org/learn/developing-ai-policy) by Coursera
-
----
-
-## :paperclip: Resources
-
-- [ICLR 2024 Paper Summaries](https://areganti.notion.site/06f0d4fe46a94d62bff2ae001cfec22c?v=d501ca62e4b745768385d698f173ae14)
-
----
 
 ## :notebook: Code Notebooks
 
