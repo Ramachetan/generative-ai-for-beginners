@@ -28,10 +28,24 @@ Embeddings are numerical representations of complex data such as words, sentence
   - Embeddings are learned by training a model on a specific task, like reconstructing linguistic contexts of words.
 
 - **Dimensionality**:
-  - Vectors are typically 50 to 300 dimensions, which helps manage high-dimensional data effectively.
+  - Vectors are typically 50 to 300 dimensions, which helps manage high-dimensional data effectively. But the recent innovations like GPT and BERT have embeddings with thousands of dimensions.
 
 - **Usage**:
   - Use embeddings to measure similarities between inputs by calculating distances (e.g., cosine similarity) between vectors.
+
+### What is Cosine Similarity?
+
+- **Definition**:
+  - Cosine similarity measures the cosine of the angle between two vectors, indicating how similar they are in direction.
+
+- **Range**:
+    - The similarity score ranges from -1 (completely opposite) to 1 (identical), with 0 indicating no similarity.
+
+- **Formula**:
+    - For vectors `A` and `B`, cosine similarity is calculated as: `cosine(A, B) = (A . B) / (||A|| * ||B||)`, where `A . B` is the dot product of `A` and `B`, and `||A||` is the magnitude of `A`.
+
+- **Applications**:
+    - Cosine similarity is widely used in recommendation systems, search engines, and clustering algorithms to measure similarity between items or documents.
 
 ### Use Cases
 
@@ -40,3 +54,11 @@ Embeddings are numerical representations of complex data such as words, sentence
 
 2. **Text Classification**:
    - Train a model to map text embeddings to correct category labels (e.g., cat vs. dog, spam vs. not spam). Once trained, the model classifies new text inputs based on their embeddings.
+
+3. **Recommendation Systems**:
+    - Use embeddings to represent users, items, and interactions in a unified vector space. Recommend items similar to those interacted with by the user.
+
+4. **Anomaly Detection**:
+    - Detect outliers in high-dimensional data by measuring the distance between embeddings of normal and anomalous data points.
+
+
