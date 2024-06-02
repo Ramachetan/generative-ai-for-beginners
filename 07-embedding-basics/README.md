@@ -33,7 +33,7 @@ Embeddings are numerical representations of complex data such as words, sentence
 - **Usage**:
   - Use embeddings to measure similarities between inputs by calculating distances (e.g., cosine similarity) between vectors.
 
-[Image Embeddings](https://arize.com/wp-content/uploads/2022/06/blog-king-queen-embeddings.jpg)
+![Image Embeddings](https://arize.com/wp-content/uploads/2022/06/blog-king-queen-embeddings.jpg)
 
 Source: [Arize](https://arize.com/)
 
@@ -73,4 +73,4 @@ Another important and challenging problem where embeddings are used is self-driv
 
 Now you can focus on one part of the problem and the other team can be responsible for traffic sign embedding and serve it to you as an input. Embeddings become the interface between models, just like a REST interface between different microservices. You may need to agree on dimensionality, but beyond that the downstream model can be a black box.
 
-[Image Embeddings](https://arize.com/wp-content/uploads/2022/06/blog-stop-sign-embeddings.png)
+![Image Embeddings](https://arize.com/wp-content/uploads/2022/06/blog-stop-sign-embeddings.png)
