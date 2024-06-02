@@ -33,7 +33,9 @@ Embeddings are numerical representations of complex data such as words, sentence
 - **Usage**:
   - Use embeddings to measure similarities between inputs by calculating distances (e.g., cosine similarity) between vectors.
 
-[Embeddings](https://www.tensorflow.org/tutorials/text/word_embeddings)
+[Image Embeddings](https://arize.com/wp-content/uploads/2022/06/blog-king-queen-embeddings.jpg)
+
+Source: [Arize](https://arize.com/)
 
 ### What is Cosine Similarity?
 
